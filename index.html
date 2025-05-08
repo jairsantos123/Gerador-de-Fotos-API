@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+</head>
+
+<body>
+    <h1>Lista de Compras</h1>
+    <div>
+        <input type="text" id="novo-item" placeholder="Digite um item">
+        <button onclick="adicionarItem()">Adicionar Itens</button>
+    </div>
+
+    <ul id="lista-compras">
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Café</li>
+    </ul>
+
+
+    <script>
+        const listaCompras = document.getElementById("lista-compras");
+
+
+        const itemArroz = document.createElement("li");
+        itemArroz.textContent = "Arroz";
+
+        const itemFeijao = document.createElement("li");
+        itemFeijao.textContent = "Feijão";
+
+        const itemCafe = document.createElement("li");
+        itemCafe.textContent = "Café";
+
+
+    
+
+    </script>
+</body>
+
+</html>
