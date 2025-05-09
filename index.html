@@ -1,43 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Compras</title>
+    <title>Gatos</title>
 </head>
-
 <body>
-    <h1>Lista de Compras</h1>
-    <div>
-        <input type="text" id="novo-item" placeholder="Digite um item">
-        <button onclick="adicionarItem()">Adicionar Itens</button>
-    </div>
+     <h1>Gerador de Fotos de Gatos</h1>
 
-    <ul id="lista-compras">
-        <li>Arroz</li>
-        <li>Feijão</li>
-        <li>Café</li>
-    </ul>
-
-
-    <script>
-        const listaCompras = document.getElementById("lista-compras");
-
-
-        const itemArroz = document.createElement("li");
-        itemArroz.textContent = "Arroz";
-
-        const itemFeijao = document.createElement("li");
-        itemFeijao.textContent = "Feijão";
-
-        const itemCafe = document.createElement("li");
-        itemCafe.textContent = "Café";
-
-
-    
-
-    </script>
+    <button onclick="loadCatImage()">Carregar Nova Foto</button>
+    <p id="status">Click no botão para carregar uma foto</p>
+    <div id="cat-container"></div>
 </body>
-
 </html>
