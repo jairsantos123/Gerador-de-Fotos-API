@@ -1,7 +1,7 @@
 async function fetchRandomCatImage() {
   try {
-    console.log('buscando imagem de gato...')
-    const response = await fetch("https://api.thecatapi.com/v1/images/search")
+    console.log('buscando imagem de cachorro...')
+    const response = await fetch("https://dog.ceo/api/breeds/image/random")
 
     if (!response.ok) {
       throw new Error(`Erro na API: ${response.status}`);
@@ -10,11 +10,11 @@ async function fetchRandomCatImage() {
     const data = await response.json();
     const catImage = data[0];
 
-    console.log("Imagem de gato encontrada!");
+    console.log("Imagem de cachorro encontrada!");
 
     return catImage;
   } catch (error) {
-    console.error('Erro ao buscar imagem de gatos: ', error);
+    console.error('Erro ao buscar imagem de cachorros: ', error);
     throw error;
   }
 }
@@ -23,7 +23,7 @@ function displayCatImage(catImage) {
   const imageElement = document.createElement('img');
 
   imageElement.src = catImage.url;
-  imageElement.alt = 'Foto de um gato';
+  imageElement.alt = 'Foto de um cachorro';
   imageElement.style.maxWidth = '100%';
 
   const infoElement =  document.createElement('p');
