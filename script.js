@@ -1,7 +1,7 @@
 async function fetchRandomCatImage() {
   try {
     console.log('buscando imagem de cachorro...')
-    const response = await fetch("https://dog.ceo/api/breeds/image/random")
+    const response = await fetch("https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all")
 
     if (!response.ok) {
       throw new Error(`Erro na API: ${response.status}`);
